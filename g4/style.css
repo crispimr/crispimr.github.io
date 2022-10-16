@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: "open sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 1440px;
+    max-width: 100%;
+}
+
+.logo{
+    margin-bottom: 50px;
+    width: 160px;
+}
+
+h1{
+    font-family: poppins,sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+img{
+    width: auto;
+}
+
+.hud-flex{
+    display: flex;
+}
+
+.hud-flex div{
+    flex: 1;
+}
+
+.hud-text{
+    color: white;
+    margin-left: 40px;
+    font-size: .9rem;
+}
+
+.hud-text p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    opacity: .9;
+}
+
+button{
+    font-family: poppins, sans-serif;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 40px;
+    color: hsl(257, 40%, 49%);
+    height: 50px;
+    width: 150px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social a{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.social a:hover{
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-image: url("./images/bg-mobile.svg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 376px;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+    }
+    .hud-flex{
+        flex-direction: column;
+    }
+    .hud-text{
+        font-size: .2rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .hud-text p{
+        line-height: 1.8rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    button{
+        width: 50%;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social a:hover{
+        color: hsl(300, 69%, 71%);
+        border: 2px solid hsl(300, 69%, 71%);
+    }
+}
