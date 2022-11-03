@@ -1,3 +1,4 @@
+// Ex 01
 const calcularBtn = document.getElementById('calcular')
 const idadeVal = document.getElementById('idade')
 const pesoVal = document.getElementById('peso')
@@ -37,3 +38,32 @@ function idade(){
 // })
 
 calcularBtn.addEventListener('click', function(){idade()})
+
+
+// Ex 02 ------------------------------------------------------------------------------
+const idade2Val = document.getElementById('idade2')
+const calcularBtn2 = document.getElementById('calcular2')
+const categoriaVal = document.getElementById('categoria')
+let cat  = 'blank'
+
+function categoria(){
+    if (idade2Val.value < 5){
+        cat = 'Sem categoria para esta idade'
+    } else if (idade2Val.value >= 5 && idade2Val.value <= 7){
+        cat = 'Infantil'
+    } else if (idade2Val.value >= 8 && idade2Val.value <= 10){
+        cat = 'Juvenil - Nivel 1'
+    } else if (idade2Val.value >= 11 && idade2Val.value <= 15){
+        cat = 'Juvenil - Nivel 2'
+    } else if (idade2Val.value >= 16 && idade2Val.value <= 30){
+        cat = 'Adulto'
+    } else
+        cat = 'Sênior'
+    
+    categoriaVal.textContent = 'Sua categoria é: ' + cat
+}
+
+calcularBtn2.addEventListener('click', function(){categoria()})
+
+// calcularBtn.addEventListener('click', function(){idade()})
+// calcularBtn2.addEventListener('click', function(){alert(idade2Val.value)})
