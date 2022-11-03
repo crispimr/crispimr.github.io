@@ -67,3 +67,20 @@ calcularBtn2.addEventListener('click', function(){categoria()})
 
 // calcularBtn.addEventListener('click', function(){idade()})
 // calcularBtn2.addEventListener('click', function(){alert(idade2Val.value)})
+
+// Ex 03 ---------------------------------------------------------------------------
+const calcularBtn3 = document.getElementById('calcular3')
+const anoVal = document.getElementById('ano')
+const votoVal = document.getElementById('voto')
+let voto = 'NA'
+
+function ano(){
+    if (anoVal.value <= 2004){
+        voto = 'Pode :('
+    } else
+        voto = 'Não :)'
+    
+    votoVal.textContent = 'Pode votar? ' + voto
+}
+
+calcularBtn3.addEventListener('click', function(){ano()})
