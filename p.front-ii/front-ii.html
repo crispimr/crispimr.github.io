@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./front-ii.css">
+    <title>p. Front-End II</title>
+</head>
+<body>
+    <section>
+        <article>
+            <h1>1. Idade e peso</h1>
+    
+            <p>Faça um programa que receba a idade e o peso de uma pessoa. De acordo com a tabela a seguir, verifique e mostre em qual grupo de risco essa pessoa se encaixa.</p>
+            
+            <table>
+                <tbody>
+                    <tr>
+                        <th>IDADE</th>
+                        <th>ATÉ 60KG</th>
+                        <th>ENTRE 60 E 90KG</th>
+                        <th>ACIMA DE 90KG</th>
+                    </tr>
+                    <tr>
+                        <td>Menores que 20 anos</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>De 20 a 50 anos</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Maiores que 50 anos</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Solução</h1>
+
+            <form action="">
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade">
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso">
+                <input type="button" value="Calcular" id="calcular">
+                <label for="risco" id="risco">Seu risco é: </label>
+            </form>
+            
+        </article>
+    </section>
+    <script src="./front-ii.js"></script>
+</body>
+</html>
