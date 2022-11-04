@@ -68,7 +68,7 @@ calcularBtn2.addEventListener('click', function(){categoria()})
 // calcularBtn.addEventListener('click', function(){idade()})
 // calcularBtn2.addEventListener('click', function(){alert(idade2Val.value)})
 
-// Ex 03 ---------------------------------------------------------------------------
+// Ex 03 -----------------------------------------------------------------------
 const calcularBtn3 = document.getElementById('calcular3')
 const anoVal = document.getElementById('ano')
 const votoVal = document.getElementById('voto')
@@ -84,3 +84,20 @@ function ano(){
 }
 
 calcularBtn3.addEventListener('click', function(){ano()})
+
+// Ex 04 -----------------------------------------------------------------------
+
+const senhaVal = document.getElementById('senha')
+const validarBtn = document.getElementById('validar')
+const mensagemVal = document.getElementById('mensagem')
+
+function validarSenha(){
+    // alert('oi')
+    senhaVal.value != '1234' ? mensagemVal.textContent = 'ACESSO NEGADO' : mensagemVal.textContent = 'ACESSO PERMITIDO'
+    
+    // if (senhaVal.value != '1234'){
+    //     mensagemVal.textContent = 'ACESSO NEGADO'
+    // }
+}
+
+validarBtn.addEventListener('click', function(){validarSenha()})
