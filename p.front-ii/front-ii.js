@@ -85,7 +85,7 @@ function ano(){
 
 calcularBtn3.addEventListener('click', function(){ano()})
 
-// Ex 04 -----------------------------------------------------------------------
+// Ex 04 --------------------------------------------------------------
 
 const senhaVal = document.getElementById('senha')
 const validarBtn = document.getElementById('validar')
@@ -101,3 +101,16 @@ function validarSenha(){
 }
 
 validarBtn.addEventListener('click', function(){validarSenha()})
+
+// Ex 05 --------------------------------------------------------------
+const qtMacasVal = document.getElementById('qtMacas')
+const calcularMacasBtn = document.getElementById('calcularMacas')
+const totalCompraVal = document.getElementById('totalCompra')
+
+function calcularMacas(){
+    // alert('oqo')
+    qtMacasVal.value < 12 ? 
+    totalCompraVal.textContent = 'Total R$: ' + qtMacasVal.value * 0.30 : totalCompraVal.textContent = 'Total R$: ' + qtMacasVal.value * 0.25
+}
+
+calcularMacasBtn.addEventListener('click', function(){calcularMacas()})
